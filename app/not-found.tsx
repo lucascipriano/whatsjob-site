@@ -23,7 +23,7 @@ export default function NotFound() {
           A página que você procura não existe. Você pode clicar no botão abaixo
           para voltar à página inicial.
         </p>
-        <Link href={"/sign-in"}>
+        <Link href={"/"}>
           <Button variant={"default"} className="mt-2">
             Voltar para o Início
           </Button>
