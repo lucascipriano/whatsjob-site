@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Happy" src=".github/logo.png" width="100%">
+  <img alt="Happy" src=".github/logo.png" width="100" height="100">
 </div>
 
 <p align="center">Plataforma Open-Source para arrumar aquela vaguinha na área de TI, visite o site <a href="https://whatsjob-site.vercel.app/">clicando aqui!</a></p>
