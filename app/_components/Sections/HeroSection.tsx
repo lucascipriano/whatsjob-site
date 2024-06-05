@@ -17,7 +17,12 @@ export function HeroSection() {
             <TextEffect words={["chance", "função", "carreira", "vaga"]} />{" "}
             ainda hoje!
           </h2>
-          <Link href={"/"} className="mt-6">
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=5547997624220&text=Ol%C3%A1%2C+gostaria+de+me+cadastrar+na+lista+para+receber+as+vagas%21&type=phone_number&app_absent=0"
+            }
+            className="mt-6"
+          >
             <Button className="px-5 py-7 leading-[55px] rounded-full bg-[#CCEC60] font-bold text-[#1d3531] text-lg">
               Se inscreva!
             </Button>
