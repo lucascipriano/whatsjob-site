@@ -5,7 +5,7 @@
 <p align="center">Plataforma Open-Source para arrumar aquela vaguinha na área de TI, visite o site <a href="https://whatsjob-site.vercel.app/">clicando aqui!</a></p>
 
 <div align="center">
-  </img src="./public/images/print.jpg">
+  </img src="/public/images/print.jpg">
 </div>
 
 # Descrição
