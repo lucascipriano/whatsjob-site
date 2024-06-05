@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" fill="none" stroke="#CCEC60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-message-square"><path d="M12 6V2H8"/><path d="m8 18-4 4V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2Z"/><path d="M2 12h2"/><path d="M9 11v2"/><path d="M15 11v2"/><path d="M20 12h2"/></svg>
+</div>
 
-## Getting Started
+<p align="center">Plataforma Open-Source para arrumar aquela vaguinha na área de TI, visite o site <a href="https://whatsjob-site.vercel.app/">clicando aqui!</a></p>
 
-First, run the development server:
+<div align="center">
+  </img src="./public/images/print.jpg">
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Descrição
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+WhatsJob é uma aplicação que ajuda você a encontrar vagas de emprego focadas em TI de forma rápida e eficiente. Com uma interface amigável, você pode buscar e se candidatar a oportunidades diretamente pelo site. Além disso, oferecemos um link direto para um bot no WhatsApp que facilita ainda mais o processo de busca de emprego, e, se desejar se cadastre na lista de membros para receber as vagas semanalmente no seu WhatsApp.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Busca de Vagas: Encontre oportunidades de emprego com base em sua localização e área de interesse.
+- Aplicação Rápida: Candidate-se a vagas diretamente pelo site com apenas alguns cliques.
+- Integração com WhatsApp: Conecte-se com nosso bot no WhatsApp para receber notificações e atualizações de novas vagas.
+- Interface Amigável: Navegação intuitiva e design responsivo para uma melhor experiência do usuário.
+- Cadastro de vagas: Você pode nós ajudar enviando vagas para ajudar as outras pessoas.
