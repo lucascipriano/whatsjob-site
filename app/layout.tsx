@@ -5,6 +5,7 @@ import { PropsWithChildren } from "react";
 import { Header } from "./_components/Header";
 import { Footer } from "./_components/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 
 const epilogue = Epilogue({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body className={epilogue.className}>
         <Header />
         <main>{children}</main>
+        <Analytics />
         <Footer />
         <Toaster />
       </body>
