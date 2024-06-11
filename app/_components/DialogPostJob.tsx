@@ -50,11 +50,15 @@ const formSchema = z.object({
   link: z.string().min(1, { message: defaultMessage }),
 });
 
+interface DialogPostJobProps {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+}
+
 type JobSchema = z.infer<typeof formSchema>;
 
-export function DialogPostJob() {
+export function DialogPostJob({ open, setOpen }: DialogPostJobProps) {
   const supabase = createClient();
-  const [open, setOpen] = useState(false);
   const { toast } = useToast();
 
   const form = useForm<JobSchema>({

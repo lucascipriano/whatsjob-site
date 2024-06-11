@@ -16,7 +16,7 @@ export interface JobPosition {
 export default async function Page() {
   const supabase = createClient();
   const { data: jobs } = await supabase.from("vagas").select("*");
-  console.log();
+
   return (
     <Fragment>
       <HeroSection />

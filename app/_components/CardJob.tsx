@@ -49,7 +49,7 @@ export function CardJob({
             {descricao}
           </CardDescription>
         </CardHeader>
-        <CardContent className="flex gap-3">
+        <CardContent className="flex gap-3 flex-wrap">
           <span className="border-black border rounded-sm px-2 py-1 text-black/80 flex gap-2 items-center w-fit font-medium justify-center">
             {empresa && (
               <>
