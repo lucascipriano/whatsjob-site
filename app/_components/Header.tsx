@@ -40,11 +40,12 @@ export function Header() {
           </div>
         </nav>
       </header>
-      <div className="lg:hidden block bg-[#1d3531] p-4">
+      <div className="lg:hidden flex bg-[#1d3531] p-4 items-center justify-between">
         <ResponsiveMenu
           openNewJobsForm={openNewJobsForm}
           setOpenNewJobsForm={setOpenNewJobsForm}
         />
+        <Logo />
       </div>
     </>
   );

@@ -15,6 +15,7 @@ interface DialogPostJobProps {
 
 import { BadgeDollarSign, Github, Menu, Plus } from "lucide-react";
 import Link from "next/link";
+import { Logo } from "./Logo";
 
 export function ResponsiveMenu({
   openNewJobsForm,
@@ -30,9 +31,11 @@ export function ResponsiveMenu({
           <Menu className="text-white" />
         </Button>
       </SheetTrigger>
-      <SheetContent side={"left"} className="!max-w-60">
+      <SheetContent side={"left"} className="!max-w-60 bg-[#1d3531]">
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
+          <SheetTitle>
+            <Logo />
+          </SheetTitle>
         </SheetHeader>
         <div className="flex flex-col gap-4 py-4">
           <Link href={""}>
