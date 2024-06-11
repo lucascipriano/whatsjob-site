@@ -38,8 +38,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body className={epilogue.className}>
         <Header />
         <main>{children}</main>
-        <Analytics />
         <Footer />
+        <Analytics />
         <Toaster />
       </body>
     </html>
