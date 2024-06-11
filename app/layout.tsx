@@ -6,6 +6,7 @@ import { Header } from "./_components/Header";
 import { Footer } from "./_components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const epilogue = Epilogue({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
         <Toaster />
       </body>
     </html>
