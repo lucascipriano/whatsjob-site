@@ -11,6 +11,8 @@ import {
 interface DialogPostJobProps {
   openNewJobsForm: boolean;
   setOpenNewJobsForm: (open: boolean) => void;
+  setOpenDonation: (open: boolean) => void;
+  openDonation: boolean
 }
 
 import { BadgeDollarSign, Github, Menu, Plus } from "lucide-react";
@@ -20,6 +22,8 @@ import { Logo } from "./Logo";
 export function ResponsiveMenu({
   openNewJobsForm,
   setOpenNewJobsForm,
+  openDonation,
+  setOpenDonation
 }: DialogPostJobProps) {
   return (
     <Sheet>
@@ -42,6 +46,7 @@ export function ResponsiveMenu({
             <Button
               variant={"secondary"}
               className="text-black flex items-center gap-2 w-full"
+              onClick={() => setOpenDonation(true)}
             >
               <BadgeDollarSign width={20} height={20} /> Fazer uma doação
             </Button>

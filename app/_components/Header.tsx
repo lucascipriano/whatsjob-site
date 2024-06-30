@@ -6,9 +6,18 @@ import { DialogPostJob } from "./DialogPostJob";
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
 import { ResponsiveMenu } from "@/components/ReponsiveMenu";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export function Header() {
   const [openNewJobsForm, setOpenNewJobsForm] = useState(false);
+  const [openDonation, setOpenDonation] = useState(false);
 
   return (
     <>
@@ -26,13 +35,26 @@ export function Header() {
               <Github width={20} height={20} />
               GitHub
             </Link>
-            <Link
-              href={"/"}
-              className="flex items-center gap-2 text-[#5D8A83] font-medium text-lg py-2 px-4 border rounded-full border-[#5D8A83]"
-            >
-              <BadgeDollarSign width={20} height={20} />
-              Fazer uma Doação
-            </Link>
+
+            <Dialog onOpenChange={setOpenDonation} open={openDonation}>
+              <DialogTrigger asChild>
+                <button className="flex items-center gap-2 text-[#5D8A83] font-medium text-lg py-2 px-4 border rounded-full border-[#5D8A83]">
+                  <BadgeDollarSign width={20} height={20} />
+                  Fazer uma Doação
+                </button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Faça uma doação</DialogTitle>
+                  <DialogDescription>
+                    Você pode fazer uma doação, ajudando a sustentar o projeto e
+                    seus custos de hospedagem do bot, o meio que utilizamos é o
+                    pix, pelo e-mail: <span className="text-base text-primary">eduardo.amaro164@gmail.com</span>
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+
             <DialogPostJob
               open={openNewJobsForm}
               setOpen={setOpenNewJobsForm}
@@ -44,6 +66,8 @@ export function Header() {
         <ResponsiveMenu
           openNewJobsForm={openNewJobsForm}
           setOpenNewJobsForm={setOpenNewJobsForm}
+          openDonation={openDonation}
+          setOpenDonation={setOpenDonation}
         />
         <Logo />
       </div>

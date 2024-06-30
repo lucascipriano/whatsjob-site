@@ -59,14 +59,6 @@ export function JobsListSection({ jobs }: { jobs: JobPosition[] }) {
               />
             )
           )}
-          <CardJob
-            descricao={"descricao"}
-            modalidade={"modalidade"}
-            empresa={"empresa"}
-            senioridade={"senioridade"}
-            link={"link"}
-            titulo={"titulo"}
-          />
         </div>
       </div>
     </section>
