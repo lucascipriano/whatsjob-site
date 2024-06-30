@@ -12,7 +12,7 @@ export function HeroSection() {
             Vagas de TI direto no seu WhatsApp!
           </h1>
           <h2 className="lg:text-7xl lg:h-auto md:text-5xl text-white font-semibold text-3xl mb-6 mt-6 text-center h-[64px]">
-            Econtre sua{" "}
+            Encontre sua{" "}
             <TextEffect words={["chance", "função", "carreira", "vaga"]} />{" "}
             ainda hoje!
           </h2>
